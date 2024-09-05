@@ -7,6 +7,8 @@ public class Autos {
     private double costo_dia;
     private Sede id_sede;
 
+
+
     public String getModelo() {
         return modelo;
     }

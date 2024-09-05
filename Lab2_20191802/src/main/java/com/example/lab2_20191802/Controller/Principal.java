@@ -6,6 +6,7 @@ import com.example.lab2_20191802.Beans.Autos;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,7 +18,9 @@ public class Principal {
         return "Pagina1";
     }
     @GetMapping(value = "/datos")
-    public String unAuto(Model model){
+    public String listaAuto(Model model){
+        ArrayList<Autos> listaAuto = new ArrayList<>();
+        listaAuto.add(new Autos());
         return "Pagina2";
     }
     @PostMapping("/guardar/auto")
